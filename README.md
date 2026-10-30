@@ -260,8 +260,12 @@ Training time per run was not logged and is therefore not reported here.
 * **Split seed of seeds 10-13.** Their run directories carry the tag `ss777`, which in this code
   base denotes a train/test split seeded with 777 rather than with the run seed (see
   `tools/v3_t11_within.py`). The per-run `run_meta.json` that would confirm this is not
-  distributed. All primary-experiment measurements use the complete 529-point input grid, so the
-  split affects only training.
+  distributed. The main-text measurements use the complete 529-point input grid and do not depend
+  on the split. `analysis/lsrun.py` re-derives the split from the run seed and ignores
+  `split_seed`, so for seeds 10-13 the train / held-out rows of the intervention audits
+  (`tools/b5_splits.py`, `tools/v6_6/leakage_audit.py`) and the 400-point training subsample use a
+  random 423/106 partition rather than the training split. The camera-ready paper (App. C.3, App. B.1)
+  states this; the train / held-out contrast rests on seeds 0-4.
 * The modular-division dataset follows Sea-Snell/grokking (cited by Brown et al., 2022); that
   repository is not vendored here.
 
