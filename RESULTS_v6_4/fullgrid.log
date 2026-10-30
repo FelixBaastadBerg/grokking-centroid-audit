@@ -1,0 +1,13 @@
+=== v6.4 full-grid recombination: 9 primary seeds, 2 pipelines ===
+    seeds [0, 1, 2, 3, 4, 10, 11, 12, 13]
+  [1/9] seed 1 n=529 m=23.0 (256s)
+  [2/9] seed 0 n=529 m=23.0 (257s)
+  [3/9] seed 4 n=529 m=23.0 (257s)
+  [4/9] seed 3 n=529 m=23.0 (257s)
+  [5/9] seed 2 n=529 m=23.0 (257s)
+  [6/9] seed 11 n=529 m=23.0 (475s)
+  [7/9] seed 10 n=529 m=23.0 (475s)
+  [8/9] seed 12 n=529 m=23.0 (476s)
+  [9/9] seed 13 n=529 m=23.0 (477s)
+
+wrote fullgrid_recombine.csv (450 rows), fullgrid_sweep.csv (234), fullgrid_meta.csv (9)   (477s)

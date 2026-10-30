@@ -1,0 +1,4 @@
+population,runs,distinct_seeds,grokked,train_fractions,seed_ids
+corpus_inventory,12,2,7,0.2;0.3;0.4;0.5;0.6;0.8,0;1
+recombination,9,5,9,0.4;0.6;0.8,0;1;2;3;4
+all_on_disk,38,20,33,0.2;0.3;0.4;0.5;0.6;0.8,0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19

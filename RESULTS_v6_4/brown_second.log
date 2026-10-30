@@ -1,0 +1,32 @@
+=== v6.4 second-configuration analysis: 4 corrected pilot runs ===
+    weight decays [np.float64(0.001), np.float64(0.01)], seeds [np.int64(0), np.int64(1)], all reported
+  seed-0 wd=0.001 done (347s)
+  seed-1 wd=0.001 done (671s)
+  seed-0 wd=0.01 done (1003s)
+  seed-1 wd=0.01 done (1322s)
+
+--- per run, both weight decays, every seed reported ---
+
+  ph_dim
+        wd  seed        interval   change  between     1st     2nd
+     0.001     0      init->conv     8.13     108%     98%    118%
+     0.001     0   plateau->conv    14.58      25%     24%     26%
+     0.001     1      init->conv     7.85     116%    103%    129%
+     0.001     1   plateau->conv    15.65      30%     25%     34%
+      0.01     0      init->conv     8.59      90%     47%    133%
+      0.01     0   plateau->conv    11.66      19%      9%     29%
+      0.01     1      init->conv     8.60      78%     25%    131%
+      0.01     1   plateau->conv    12.15       4%     -8%     17%
+
+  twonn
+        wd  seed        interval   change  between     1st     2nd
+     0.001     0      init->conv    -9.53      39%     83%     -4%
+     0.001     0   plateau->conv     5.38     -22%    -44%      0%
+     0.001     1      init->conv    -9.17      29%     63%     -5%
+     0.001     1   plateau->conv     4.88     -14%    -29%      2%
+      0.01     0      init->conv    -6.21      50%    127%    -27%
+      0.01     0   plateau->conv     3.49     -33%    -66%      1%
+      0.01     1      init->conv    -5.50      11%    107%    -84%
+      0.01     1   plateau->conv     3.19     -41%    -83%      1%
+
+wrote brown_second_config.csv  (1322s)

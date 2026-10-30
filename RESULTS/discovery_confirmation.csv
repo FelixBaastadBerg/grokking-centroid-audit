@@ -1,0 +1,11 @@
+hypothesis,frozen decision,split,n,effect,ci
+grokked nets reach the clustered regime,"label silhouette, true classes, final checkpoint",discovery,30,+0.645,"[+0.612, +0.694]"
+grokked nets reach the clustered regime,"label silhouette, true classes, final checkpoint",confirmation,19,+0.629,"[+0.618, +0.692]"
+PH-dim co-moves with NN clusteredness,"within-run Spearman, ph_dim vs gap_ratio",discovery,16,+0.982,"[+0.870, +1.000]"
+PH-dim co-moves with NN clusteredness,"within-run Spearman, ph_dim vs gap_ratio",confirmation,8,+0.996,"[+0.926, +0.999]"
+E1: PH-dim responds to class separation alone,"alpha sweep, trace-normalised, real activations",discovery,6,11.48x,"[10.52, 14.35]"
+E1: PH-dim responds to class separation alone,"alpha sweep, trace-normalised, real activations",confirmation,1,n/a,n/a
+E1: TwoNN responds to class separation alone,"alpha sweep, trace-normalised, real activations",discovery,6,1.19x,"[1.14, 1.46]"
+E1: TwoNN responds to class separation alone,"alpha sweep, trace-normalised, real activations",confirmation,1,n/a,n/a
+PH-dim phase precedes accuracy,"phase, movement-gated, uniform sampling",discovery,20,0.225,"[0.165, 0.497]"
+PH-dim phase precedes accuracy,"phase, movement-gated, uniform sampling",confirmation,9,0.286,"[0.159, 1.000]"

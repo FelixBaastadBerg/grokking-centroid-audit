@@ -1,0 +1,32 @@
+=== synthetic: dense-order GRIDE crossover against the corrected forced order ===
+    cross  first_leak  forced   old
+m                                  
+8     4.0         4.0       4   4.0
+16    7.0         8.0       8   8.0
+32   13.0        16.0      16  16.0
+64    NaN         NaN      32  32.0
+
+=== real activations: class sizes, forced orders, and measured crossover ===
+  seed 0 done
+  seed 1 done
+  seed 2 done
+  seed 3 done
+  seed 4 done
+  seed 10 done
+  seed 11 done
+  seed 12 done
+  seed 13 done
+
+  per-population summary (median over the 9 primary seeds):
+            cross  first_leak  forced_min  forced_median
+population                                              
+fullgrid      8.0        12.0        12.0           12.0
+train400      6.0         7.0         7.0            9.0
+
+  class-size summary:
+                n     K  m_min  m_med  m_max  forced_min  forced_med
+population                                                          
+fullgrid    529.0  23.0   23.0   23.0   23.0        12.0        12.0
+train400    400.0  23.0   13.0   18.0   21.0         7.0         9.0
+
+done (42s); wrote RESULTS_v6_4/gride_*.csv

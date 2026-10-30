@@ -1,0 +1,39 @@
+=== T1.1: within-class spectral compression across the corpus ===
+    99 MLP runs, last hidden layer
+
+--- Q1: does terminal within-class compression separate grokked / non-grokked? ---
+  grokked     (n=53): within-eff-rank change -53.6% [-63.6%, -50.1%]
+  non-grokked memorisers (n=43): -63.5% [-65.8%, -57.7%]
+  Mann-Whitney (grokked more compressed): p = 9.82e-01
+  single threshold -30%: detects 100% of grokked at 98% of non-grokked
+  random-label memorisers (n=3): -65.7%
+
+--- Q2: onset of within-class compression vs t_grok (grokked runs) ---
+  n = 53 with measurable onsets
+  Spearman(t_wcomp, t_grok) = -0.038 (p = 7.9e-01)
+  partial, controlling separation onset t_sil: -0.378  (n = 53)
+  lead over t_grok: median +600 epochs (51% of runs lead)
+
+--- Q3: co-emergence with the equivariance order parameter ---
+  within-run Spearman(within-eff-rank, equiv_R2): median -0.152 over 60 runs (67% negative)
+
+--- Q4: across tasks (terminal relative change, grokked runs, last hidden) ---
+  add/p23   n=27  within -62.7%   global -81.0%
+  add/p59   n= 7  within -63.4%   global -84.2%
+  mul/p23   n= 1  within -52.4%   global -79.6%
+  perm/p24   n=17  within -50.5%   global -81.1%
+  sub/p23   n= 1  within -47.7%   global -79.3%
+  first hidden layer, grokked runs: within change median -22.5% (n = 53)
+
+--- Q5: GeomDR regulariser (v3_geomdr_within.csv) ---
+  lam=0.0    t_grok median   9500  within-eff-rank @2000   27.8  min   22.6
+  within-compression onset by lam: 0.0: 1500
+
+--- Q6: onset prediction, within vs global effective rank ---
+  onset of WITHIN-class compression      rho = -0.038  LOO-MAE = 4353  (n = 53)
+  onset of GLOBAL compression            rho = +0.098  LOO-MAE = 4357  (n = 53)
+  onset of separation (silhouette)       rho = +0.428  LOO-MAE = 3835  (n = 53)
+  early-value variant (value at the 10% epoch, p1_3 protocol):
+    early within-eff-rank      rho = -0.071  LOO-MAE = 5487  (n = 35)
+    early global-eff-rank      rho = -0.266  LOO-MAE = 5367  (n = 35)
+    early silhouette           rho = -0.409  LOO-MAE = 3671  (n = 35)

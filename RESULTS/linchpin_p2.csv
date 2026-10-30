@@ -1,0 +1,4 @@
+signal,n,rho_vs_test_acc,rho_vs_clustering,partial_given_clustering,frac_partial_below_0.2
+H1_max,23,0.366,0.189,0.38,0.304
+H1_total,23,0.516,-0.003,0.585,0.13
+H1_nbars,19,0.255,0.046,0.26,0.316

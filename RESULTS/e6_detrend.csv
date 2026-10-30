@@ -1,0 +1,6 @@
+check,rho,n
+raw within-run (trajectory co-movement),0.9910629296668428,24
+first differences,0.7705023028670279,24
+residuals after regressing on log-epoch,0.39851930195663665,24
+cross-run at matched training fraction,0.2721739130434782,5
+cross-run within matched test-accuracy bins,0.7188029361942406,5

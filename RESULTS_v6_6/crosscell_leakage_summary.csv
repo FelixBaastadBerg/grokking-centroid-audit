@@ -1,0 +1,4 @@
+cell,n_runs,points_per_class_median,points_per_class_min,points_per_class_max,train_fractions,L2_C0R0_median,L2_C0R0_min,L2_C0R0_max,L2_C1R0_median,L2_C1R0_min,L2_C1R0_max,L2_C0R1_median,L2_C0R1_min,L2_C0R1_max,L2_C1R1_median,L2_C1R1_min,L2_C1R1_max,contained_centroid_step_Rinit,contained_centroid_step_Rconv,contained_converged_only
+S4_perm_mlp,5,16.666666666666668,16.666666666666668,16.666666666666668,0.8,1.0,1.0,1.0,0.0,0.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0,0,0,5
+Z23_add_mlp,9,17.391304347826086,17.391304347826086,17.391304347826086,0.8,1.0,1.0,1.0,0.0,0.0,0.0,1.0,0.985,1.0,0.0,0.0,0.01,0,0,6
+Z59_add_mlp,9,6.779661016949152,6.779661016949152,6.779661016949152,0.4;0.6;0.8,1.0,1.0,1.0,0.005,0.0,0.0275,1.0,1.0,1.0,0.005,0.0,0.0275,0,0,1

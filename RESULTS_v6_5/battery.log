@@ -1,0 +1,25 @@
+=== v6.5 intervention battery, complete input grid, 9 primary seeds ===
+  [1/9] (84s)
+  [2/9] (84s)
+  [3/9] (84s)
+  [4/9] (85s)
+  [5/9] (85s)
+  [6/9] (130s)
+  [7/9] (130s)
+  [8/9] (130s)
+  [9/9] (131s)
+
+  n = 529 points, K = 23 classes
+
+  statistic                      a=0     a=8  ratio-of-med  med-of-ratios        seed range
+  H1_total                      9.63    0.30        31.78x         31.78x   [19.35, 54.54]
+  ph_dim                       15.48    1.49        10.40x         10.39x   [9.27, 10.91]
+  eff_rank                     23.26    9.30         2.50x          2.40x   [1.45, 2.97]
+  pca_pr                       12.93    8.82         1.47x          1.42x   [0.58, 1.86]
+  mle_k10                      15.35    9.57         1.60x          1.62x   [1.53, 1.78]
+  H1_max                        0.05    0.05         0.96x          1.02x   [0.64, 11.41]
+  spec_entropy                  3.15    2.23         1.41x          1.40x   [1.16, 1.53]
+  corr_dim                      8.43    6.87         1.23x          1.21x   [0.97, 1.35]
+  twonn                        17.44   14.76         1.18x          1.18x   [1.02, 1.28]
+
+wrote intervention_battery_fullgrid.csv, intervention_battery_summary.csv (131s)

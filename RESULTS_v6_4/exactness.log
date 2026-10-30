@@ -1,0 +1,28 @@
+=== v6.4 exactness checks on 9 primary seeds, complete input grid ===
+  [1/9] (116s)
+  [2/9] (117s)
+  [3/9] (118s)
+  [4/9] (121s)
+  [5/9] (121s)
+  [6/9] (177s)
+  [7/9] (178s)
+  [8/9] (178s)
+  [9/9] (181s)
+
+--- C1  same-class distances before global scaling ---
+  max absolute deviation over all seeds and alphas: 1.801e-03
+  max relative deviation:                           2.658e-07
+
+--- C2  after global scaling: one common factor per cloud ---
+  max within-cloud spread of the factor (max/min - 1): 7.401e-07
+
+--- C3  TwoNN distance ratios where neighbourhoods are class-contained ---
+  max deviation, contained points:  7.325e-07
+  alphas with L2 = 0 exactly:       [1.0, 1.5, 2.0, 3.0, 4.0, 6.0, 8.0]
+
+--- C4  diagonal recombination vs the real checkpoint ---
+  max coordinate deviation:  8.941e-08
+  max |PH-dim difference|:   1.471e-07
+  max |TwoNN difference|:    3.784e-07
+
+wrote exactness_checks.csv, exactness_summary.csv  (181s)

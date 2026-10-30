@@ -1,0 +1,11 @@
+,value
+n_mlp_corpus,96
+n_grokked_last_ckpt_rule,54
+n_grokked_mean5_rule,53
+n_memorisers,43
+n_randlabel_controls,3
+n_operating_point,89
+n_op_grokked_last_ckpt_rule,49
+n_op_grokked_mean5_rule,48
+n_op_missing,7
+n_silhouette_table_mlp_rows,48

@@ -1,0 +1,19 @@
+=== v6.4 Brown-exact TwoNN on 10 confirmation seeds ===
+  [1/10] seed 102 (97 ckpts, 1337s)
+  [2/10] seed 101 (97 ckpts, 1382s)
+  [3/10] seed 103 (97 ckpts, 1388s)
+  [4/10] seed 104 (97 ckpts, 1393s)
+  [5/10] seed 100 (97 ckpts, 1393s)
+  [6/10] seed 105 (97 ckpts, 2689s)
+  [7/10] seed 107 (97 ckpts, 2718s)
+  [8/10] seed 106 (97 ckpts, 2721s)
+  [9/10] seed 108 (97 ckpts, 2723s)
+  [10/10] seed 109 (97 ckpts, 2725s)
+
+--- plateau->convergence TwoNN attribution, by estimator rule ---
+  rule           n   decline   within share             range   cent-first   cent-second
+  brown_min      9      5.11          116%   [ 101%,  208%]        -33%           0%
+  brown_pl1      9      5.08          117%   [ 101%,  208%]        -33%           0%
+  paper          9      5.63          115%   [  99%,  179%]        -31%           0%
+
+done (2725s)

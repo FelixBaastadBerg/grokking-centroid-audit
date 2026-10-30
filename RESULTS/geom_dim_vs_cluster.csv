@@ -1,0 +1,8 @@
+measure,n,rho_vs_clustering,rho_vs_testacc,partial_vs_testacc_given_clustering
+ph_dim,59,0.979,-0.829,-0.152
+corr_dim,59,0.918,-0.552,0.065
+twonn,59,0.868,-0.667,0.04
+mle_id_k5,59,0.896,-0.755,0.006
+mle_id_k10,59,0.914,-0.742,-0.011
+pca_pr,59,0.971,-0.779,-0.009
+eff_rank,59,0.981,-0.81,-0.055

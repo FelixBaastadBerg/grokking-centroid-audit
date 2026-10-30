@@ -1,0 +1,43 @@
+=== P1.1: Z59 w16 fixed configuration, 20 seeds ===
+
+1. GROK FRACTION: 20/20 at final test >= 0.9 (20/20 at >= 0.5)
+
+2. per-seed endpoints (cond TwoNN, cond MLE, within-eff-rank; * = grokked):
+   seed  0* test 1.00  ctwonn   6.9->  1.9  cmle   7.0->  2.2  wER  10.8->  5.6  t_grok   2000
+   seed  1* test 1.00  ctwonn   6.6->  3.2  cmle   6.7->  2.8  wER   9.5->  5.9  t_grok   2000
+   seed  2* test 0.99  ctwonn   6.3->  4.2  cmle   6.5->  3.7  wER   8.4->  6.0  t_grok   2000
+   seed  3* test 1.00  ctwonn   6.6->  3.4  cmle   6.8->  2.3  wER   9.2->  5.5  t_grok   4000
+   seed  4* test 1.00  ctwonn   7.0->  0.9  cmle   7.0->  2.0  wER   9.5->  5.1  t_grok   2000
+   seed  5* test 1.00  ctwonn   6.1->  3.0  cmle   6.4->  2.8  wER   8.9->  3.9  t_grok   2000
+   seed  6* test 0.98  ctwonn   7.1->  4.4  cmle   7.0->  3.3  wER   9.2->  5.7  t_grok   2000
+   seed  7* test 1.00  ctwonn   6.9->  3.8  cmle   6.9->  3.1  wER   9.9->  3.8  t_grok   2000
+   seed  8* test 0.99  ctwonn   6.6->  3.9  cmle   6.6->  3.6  wER   8.4->  6.2  t_grok   2000
+   seed  9* test 1.00  ctwonn   6.1->  2.2  cmle   6.2->  2.2  wER   8.8->  5.7  t_grok   2000
+   seed 10* test 1.00  ctwonn   6.8->  1.5  cmle   7.0->  2.3  wER  10.3->  4.1  t_grok   2000
+   seed 11* test 0.98  ctwonn   6.8->  3.9  cmle   6.8->  3.6  wER   9.8->  6.6  t_grok   2000
+   seed 12* test 1.00  ctwonn   7.0->  3.0  cmle   6.8->  2.5  wER   9.1->  4.3  t_grok   2000
+   seed 13* test 1.00  ctwonn   6.8->  1.5  cmle   6.9->  2.8  wER   9.7->  6.2  t_grok   2000
+   seed 14* test 0.99  ctwonn   6.5->  2.9  cmle   6.6->  2.4  wER   9.2->  5.2  t_grok   2000
+   seed 15* test 0.98  ctwonn   6.9->  2.7  cmle   6.9->  3.6  wER   9.5->  8.3  t_grok   2000
+   seed 16* test 0.99  ctwonn   6.1->  3.5  cmle   6.1->  3.1  wER   8.0->  4.9  t_grok   2000
+   seed 17* test 1.00  ctwonn   6.7->  0.6  cmle   6.7->  1.7  wER  10.2->  5.8  t_grok   2000
+   seed 18* test 1.00  ctwonn   7.5->  3.5  cmle   7.6->  3.0  wER  10.5->  6.8  t_grok   2000
+   seed 19* test 0.99  ctwonn   6.3->  3.2  cmle   6.6->  2.4  wER  10.3->  6.6  t_grok   2000
+
+3. GROKKERS (n=20) vs NON-GENERALISING MEMORISERS (n=0):
+   cond TwoNN final         grokked   3.1  memoriser   nan
+   cond MLE final           grokked   2.8  memoriser   nan
+   within-eff-rank final    grokked   5.7  memoriser   nan
+
+
+4. PRE-GROK within-class change (init -> last checkpoint before t_grok, grokkers):
+   cond TwoNN 6.7 -> 6.7 (+0%); within-eff-rank 9.5 -> 9.5 (+0%)
+
+5. EARLY PREDICTION (epoch ~6000):
+     among grokkers: rho(cond TwoNN value, t_grok) = +0.22 (p=0.35)
+     among grokkers: rho(within-eff-rank value, t_grok) = -0.26 (p=0.27)
+     among grokkers: rho(cond TwoNN early change, t_grok) = +0.30 (p=0.2)
+
+6. TIME-TO-GROK with censoring at 60000:
+   events 20/20, censored 0; KM survival at 60k = 0.00; KM median t_grok = 2000
+   among grokkers: t_grok median 2000, range 2000-4000

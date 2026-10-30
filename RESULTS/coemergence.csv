@@ -1,0 +1,16 @@
+source,statistic,check,n,median_rho,q25,q75,frac_positive,wilcoxon_p
+geom_series,nn_clusteredness,"all group-structured runs, raw within-run",57,0.9785714285714284,0.8357142857142855,0.9964285714285712,0.8771929824561403,3.716577838298454e-10
+geom_series,nn_clusteredness,"all group-structured runs, first differences",57,0.48571428571428577,0.16923076923076924,0.6747252747252748,0.8421052631578947,1.6507097620612856e-08
+geom_series,nn_clusteredness,"all group-structured runs, residuals on log epoch",57,0.7499999999999999,0.36233766233766235,0.8610389610389609,0.8596491228070176,6.1751998671307855e-09
+geom_series,nn_clusteredness,"grokked runs only, raw within-run",22,0.9949284977148753,0.9832096953613981,0.9987012987012988,1.0,3.9632291145653955e-05
+geom_series,nn_clusteredness,"grokked runs only, first differences",22,0.4857826384142173,0.34454334365325073,0.5958589655958076,0.8636363636363636,0.0001552626923802557
+geom_series,nn_clusteredness,"grokked runs only, residuals on log epoch",22,0.7754272043745727,0.49577922077922076,0.8878603594547867,1.0,4.76837158203125e-07
+comeasure x temporal_equiv,act_silhouette,"label-silhouette, raw within-run",20,0.47033315705975665,-0.15490481226864092,0.8437689562858273,0.7,0.01531219482421875
+comeasure x temporal_equiv,act_silhouette,"label-silhouette, first differences",20,0.3460127813281467,0.28916365657126986,0.42004723534315097,1.0,1.9073486328125e-06
+comeasure x temporal_equiv,act_silhouette,"label-silhouette, residuals on log epoch",20,0.488339502908514,0.3623479640401903,0.7164028306787271,0.9,0.000133514404296875
+geom_series,nn_clusteredness,"task = add, raw within-run",33,0.9785714285714284,0.811405985319029,0.993984962406015,0.8484848484848485,2.7242376964218652e-06
+geom_series,nn_clusteredness,"task = perm, raw within-run",24,0.982142857142857,0.8464285714285713,0.9987012987012988,0.9166666666666666,3.395406913527021e-05
+geom_series,onset_epoch,"rho(t_equiv, t_clust), all",54,0.15317967431351903,,,,0.26879610966890577
+geom_series,onset_epoch,"pearson log10(t_equiv, t_clust), all",54,0.12915201754791916,,,,
+geom_series,onset_epoch,"rho(t_equiv, t_clust), grokked",22,0.5565791854052142,,,,0.007139165967765287
+geom_series,onset_epoch,"pearson log10(t_equiv, t_clust), grokked",22,0.6924250149888254,,,,

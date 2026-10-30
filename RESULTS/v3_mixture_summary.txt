@@ -1,0 +1,13 @@
+=== T1.3 mixture-theorem validation ===
+1. cross edges ~ K-1 when separated (gamma >= 4): median n_cross/(K-1) = 1.00
+2. Steele within-slope vs 1 - alpha/d, by d:
+     d=2:  slope_w median +0.661  (asymptotic +0.500);  slope_b median -0.002 (~0)
+     d=5:  slope_w median +0.853  (asymptotic +0.800);  slope_b median -0.006 (~0)
+     d=8:  slope_w median +0.927  (asymptotic +0.875);  slope_b median -0.007 (~0)
+3. estimator d_hat predicted by the two-term model fit: R^2 = 0.900 (n = 288)
+   closed-form (*) with u measured at the window midpoint:  R^2 = 0.916
+   endpoint check: most-collapsed cells (gamma=16, m=8): d_hat median = 1.09 (theory -> alpha = 1.0)
+4. u-law fit  u = c gamma^a m^-b  (theory: a = alpha = 1, b = 1 - alpha/d):
+     d=2:  a = 1.00  b = 0.50 (asymptotic b = 0.50)  R^2 = 0.984
+     d=5:  a = 1.00  b = 0.70 (asymptotic b = 0.80)  R^2 = 0.986
+     d=8:  a = 1.00  b = 0.75 (asymptotic b = 0.88)  R^2 = 0.977

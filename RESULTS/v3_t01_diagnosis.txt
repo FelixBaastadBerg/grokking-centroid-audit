@@ -1,0 +1,9 @@
+T0.1 diagnosis: the v2 leave-one-seed-out column was computed with the trajectory
+targets bootstrap-resampled once (default_rng(2)) and shared across all nine
+replicates, so it was not a LOSO at all. The full-sample points were deterministic
+and stand; the LOSO column is replaced by the true ranges below.
+
+ph_dim: point 138.5%, buggy-LOSO artifact 110.6%
+eff_rank: point 109.4%, buggy-LOSO artifact 80.7%
+pca_pr: point 73.0%, buggy-LOSO artifact 52.2%
+twonn: point 124.7%, buggy-LOSO artifact 36.0%

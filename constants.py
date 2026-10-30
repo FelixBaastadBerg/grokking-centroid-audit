@@ -1,0 +1,5 @@
+
+import torch
+DEFAULT_MODULO = 113
+MODULO = 113
+TRAIN_FRACTION = 0.3
